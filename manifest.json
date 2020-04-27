@@ -1,0 +1,23 @@
+{
+  "name": "Upwork Feed Push Notifications",
+  "version": "1.0",
+  "description": "Push notification alerts for your Upwork job feeds.",
+  "permissions": [
+    "notifications",
+    "storage",
+    "*://www.upwork.com/*", "*://upwork.com/*"
+  ],
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+     "128": "icon.png"
+    },
+    "default_popup": "src/popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "./lib/fast-xml-parser/parser.min.js",
+      "./src/background/index.js"
+    ]
+  }
+}
