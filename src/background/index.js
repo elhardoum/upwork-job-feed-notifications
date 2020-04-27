@@ -1,7 +1,7 @@
 (() =>
 {
   const INTERVAL_MS = 120 *1000 // by default update every 2 minutes
-      , NOTIFICATIONS_DELAY = 2 *1000 // delay between multiple notifications
+      , NOTIFICATIONS_DELAY = 5 *1000 // delay between multiple notifications
       , xml_parser = parser
       , storage = class Storage
       {
