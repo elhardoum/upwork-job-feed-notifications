@@ -8,6 +8,9 @@
     "*://www.upwork.com/*", "*://upwork.com/*"
   ],
   "manifest_version": 2,
+  "icons": {
+   "128": "icon.png"
+  },
   "browser_action": {
     "default_icon": {
      "128": "icon.png"
