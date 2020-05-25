@@ -47,8 +47,8 @@
       items.forEach(item => -1 == past_ids.indexOf(item._id) && past_ids.push(item._id))
 
       // persist notified ids to skip later
-      // store last 1000 ids to avoid redundant data storage
-      storage_set('past_ids', past_ids.slice(Math.max(0, past_ids.length - 1000)))
+      // store last 200 ids to avoid redundant data storage
+      storage_set('past_ids', past_ids.slice(Math.max(0, past_ids.length - 200)))
     })
   }
 
