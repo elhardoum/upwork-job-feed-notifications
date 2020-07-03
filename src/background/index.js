@@ -17,7 +17,7 @@
 
     urls && urls.length && urls.forEach(async url =>
     {
-      const response = await fetch(url)
+      const response = await fetch(`${url}${url.indexOf('?') > 0 ? '&' : '?'}__t=${+new Date}`)
         .then(r => r.text())
         .then(j => xml_parser.parse(j))
         .catch(error => console.log(`${url} HTTP fetch ended with an error: ${error}`))
